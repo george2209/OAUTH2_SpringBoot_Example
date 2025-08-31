@@ -17,7 +17,7 @@ public class SecurityConfig {
                 .anyRequest().authenticated())
                 .oauth2Login(
                         oauth2 -> oauth2
-                                .loginPage("/oauth2/authorization/github")
+                                /////////////// .loginPage("/oauth2/authorization/github")
                                 .defaultSuccessUrl("/user", true)) // Redirect after successful login)
                 // if you uncomment will cancel the .loginPage *** !!!!!
                 // .exceptionHandling(exceptions -> exceptions.authenticationEntryPoint(new
