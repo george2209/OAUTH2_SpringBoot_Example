@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: "postgres:latest"
+    environment:
+      - "POSTGRES_DB=oauth2_db"
+      - "POSTGRES_PASSWORD=1sMyS3cr3t!"
+      - "POSTGRES_USER=gigicu"
+    ports:
+      - "5432"
