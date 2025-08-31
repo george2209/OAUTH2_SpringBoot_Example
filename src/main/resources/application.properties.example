@@ -1,0 +1,5 @@
+#This file is for local development only. Do not check in your real client id and secret.
+#rename this file as application.properties
+spring.application.name=oauth2ex
+spring.security.oauth2.client.registration.github.client-id=<your_git_id>
+spring.security.oauth2.client.registration.github.client-secret=<your_git_key>
