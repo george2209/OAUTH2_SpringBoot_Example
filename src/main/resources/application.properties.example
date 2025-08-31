@@ -3,3 +3,8 @@
 spring.application.name=oauth2ex
 spring.security.oauth2.client.registration.github.client-id=<your_git_id>
 spring.security.oauth2.client.registration.github.client-secret=<your_git_key>
+spring.security.oauth2.client.registration.github.scope=read:user,user:email
+spring.security.oauth2.client.registration.github.redirect-uri=http://localhost:8080/login/oauth2/code/github
+spring.security.oauth2.client.provider.github.authorization-uri=https://github.com/login/oauth/authorize
+spring.security.oauth2.client.provider.github.token-uri=https://github.com/login/oauth/access_token
+spring.security.oauth2.client.provider.github.user-info-uri=https://api.github.com/user
